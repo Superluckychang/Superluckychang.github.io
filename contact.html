@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="联系Daisy Tang - 期待与你交流">
+  <title>联系我 · Daisy Tang</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Daisy<span>Tang</span></a>
+      <nav class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于</a>
+        <a href="resume.html">简历</a>
+        <a href="contact.html" class="active">联系</a>
+      </nav>
+      <button class="nav-toggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="nav-overlay"></div>
+
+  <!-- 页面头部 -->
+  <section class="page-header">
+    <h1 class="page-title">联系我</h1>
+    <p class="page-subtitle">无论是工作机会、技术交流，还是单纯想认识新朋友，都欢迎联系 👋</p>
+  </section>
+
+  <!-- 联系内容 -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- 联系方式 -->
+        <div class="contact-info fade-in">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 20px; color: var(--text-primary);">📬 找到我</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <div class="contact-label">邮箱</div>
+              <div class="contact-value">
+                <a href="mailto:tangchang_r@163.com">tangchang_r@163.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <div class="contact-label">电话</div>
+              <div class="contact-value">186-7046-9623</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🌐</div>
+            <div>
+              <div class="contact-label">个人网站</div>
+              <div class="contact-value">tangchang.com</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label">所在地</div>
+              <div class="contact-value">中国 · 上海</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 联系表单 -->
+        <div class="contact-form fade-in">
+          <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: 24px; color: var(--text-primary);">✉️ 给我留言</h3>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">姓名 *</label>
+              <input type="text" id="name" name="name" placeholder="你的名字" required>
+            </div>
+            <div class="form-group">
+              <label for="email">邮箱 *</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">主题</label>
+              <input type="text" id="subject" name="subject" placeholder="留言主题（选填）">
+            </div>
+            <div class="form-group">
+              <label for="message">留言内容 *</label>
+              <textarea id="message" name="message" placeholder="想说的话……" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              发送留言 ✉️
+            </button>
+          </form>
+          <p style="margin-top: 16px; font-size: 0.85rem; color: var(--text-muted); text-align: center;">
+            提交后将打开邮件客户端发送，也可以直接发邮件到 tangchang_r@163.com
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <p class="footer-name">Daisy Tang</p>
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于</a>
+      <a href="resume.html">简历</a>
+      <a href="contact.html">联系</a>
+    </div>
+    <p>© 2025 Tang Chang. Made with ❤️</p>
+  </footer>
+
+  <!-- 回到顶部 -->
+  <button class="back-to-top" aria-label="回到顶部">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
