@@ -2,6 +2,18 @@
    个人网站 - 交互脚本
    ============================================ */
 
+// ===== 修复 bfcache 恢复时图片不显示的问题 =====
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    // 从浏览器往返缓存恢复时，强制重绘所有图片
+    document.querySelectorAll('img').forEach(img => {
+      const src = img.src;
+      img.src = '';
+      img.src = src;
+    });
+  }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // ===== 导航栏滚动效果 =====
